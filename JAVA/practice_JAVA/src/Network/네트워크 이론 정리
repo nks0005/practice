@@ -1,4 +1,6 @@
 - Anhyoungbin github:nks0005
+- 책 : JAVA의 정석 2en Edition
+
 
 1. 네트워킹이란?
  두 대 이상의 컴퓨터를 케이블로 연결하여 네트워크(network)를 구성하는 것을 말함. 
@@ -20,4 +22,9 @@
  
  byte[] getAddress() - IP 주소를 byte 배열로 반환
  static InetAddress[] getAllByName(String host) - 도메인명(host)에 지정된 모든 호스트의 IP주소를 배열에 담아 반환한다.
+ static InetAddress getByAddress(byte[] addr) - byte배열을 통해 IP주소를 얻는다.
+ ...
+[Network_ex1.java]
+
+
  
