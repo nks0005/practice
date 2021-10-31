@@ -45,3 +45,5 @@
 5. URLConnection
  URLConnection은 어플리케이션과 URL간의 통신 연결을 나타내는 클래스의 최상위 클래스로 추상 클래스이다.
 [Network_ex3.java]
+
+
