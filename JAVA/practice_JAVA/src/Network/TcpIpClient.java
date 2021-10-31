@@ -9,7 +9,7 @@ public class TcpIpClient {
 			String serverIp = "127.0.0.1";
 
 			System.out.println("서버에 연결 중 입니다. 서버 IP : " + serverIp);
-
+			
 			// 소켓을 생성하여 연결을 요청한다
 			Socket socket = new Socket(serverIp, 80);
 
