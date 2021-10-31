@@ -47,3 +47,31 @@
 [Network_ex3.java]
 [Network_ex4.java]
 [Network_ex5.java]
+
+2. 소켓 프로그래밍
+ 소켓 프로그래밍이란, 소켓을 이용한 통신 프로그래밍을 말한다.
+ 이때 소켓이란, 프로세스간의 통신에 사용되는 양쪽 끝단(endpoint)을 의미한다.
+ 
+2.1. TCP UDP
+ TCP/IP 프로토콜은 이기종 시스템 간의 통신을 위한 표준 프토로콜로 프로토콜의 집합이다.
+ OSI 7계층의 전송 계층 transport layer에 해당
+ TCP, UDP 모두 TCP/IP 프로토콜
+ 
+ TCP
+  연결 기반 1:1 통신 방식
+   신뢰성 있는 데이터 전송
+   UDP보다 전송 속도가 느림
+   데이터의 경계를 구분하지 않음 (byte-stream)
+    .Socket, .ServerSocket
+ UDP
+  비 연결 기반
+   신뢰성 없는 
+   TCP보다 빠름
+   데이터의 경계를 구분함 (datagram)
+    .DatagramSocket, .DatagramPacket, .MulticastSocket
+[TcpIpServer.java]
+[TcpIpClient.java]
+
+ 
+    
+ 
