@@ -30,23 +30,48 @@ public class ByteArrayStream {
 	public static void Ex_2() {
 		byte[] inSrc = new byte[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		byte[] outSrc = null;
-		
+
 		byte[] temp = new byte[10];
-		
+
 		ByteArrayInputStream Bio = new ByteArrayInputStream(inSrc);
 		ByteArrayOutputStream Bout = new ByteArrayOutputStream();
-		
+
 		Bio.read(temp, 0, temp.length); // temp 배열에 담음
 		Bout.write(temp, 5, 5); // temp[5]째부터 5개를 가지고감
-		
+
 		outSrc = Bout.toByteArray();
-		
+
 		System.out.println("outSrc : " + Arrays.toString(outSrc));
-		
+
+	}
+
+	public static void Ex_3() {
+		byte[] inSrc = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+		byte[] outSrc = null;
+
+		byte[] temp = new byte[4];
+
+		ByteArrayInputStream input = new ByteArrayInputStream(inSrc);
+		ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+		try {
+			while (input.available() > 0) {
+				int len = input.read(temp);
+				output.write(temp, 0, len);
+			}
+		} catch (IOException ie) {
+			ie.printStackTrace();
+		}
+
+		outSrc = output.toByteArray();
+
+		System.out.println("outSrc : " + Arrays.toString(outSrc));
 	}
 
 	public static void main(String[] args) {
 		// Ex_1();
-		Ex_2();
+		// Ex_2();
+		Ex_3();
+
 	}
 }
