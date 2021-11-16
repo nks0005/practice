@@ -68,10 +68,34 @@ public class ByteArrayStream {
 		System.out.println("outSrc : " + Arrays.toString(outSrc));
 	}
 
+	public static void Ex_4() {
+		byte[] inSrc = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+		byte[] outSrc = null;
+
+		byte[] temp = new byte[4];
+
+		ByteArrayInputStream bio = new ByteArrayInputStream(inSrc);
+		ByteArrayOutputStream bout = new ByteArrayOutputStream();
+		try {
+			while (bio.available() > 0) {
+				int len = bio.read(temp);
+				bout.write(temp, 0, len);
+			}
+		} catch (IOException ie) {
+			ie.printStackTrace();
+		}
+
+		outSrc = bout.toByteArray();
+
+		System.out.println("outSrc : " + Arrays.toString(outSrc));
+
+	}
+
 	public static void main(String[] args) {
 		// Ex_1();
 		// Ex_2();
-		Ex_3();
+		// Ex_3();
+		Ex_4();
 
 	}
 }

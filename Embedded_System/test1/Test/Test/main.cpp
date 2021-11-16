@@ -1,8 +1,6 @@
 /*
- * Test.cpp
- *
- * Created: 2021-11-04 오후 2:02:48
- * Author : root
+ * 12161609_안형빈
+ * 10주차 과제
  */ 
 
 #define F_CPU 16000000UL
@@ -11,37 +9,43 @@
 #include <avr/io.h>
 
 
+void speak(char input){
+	PORTA = (1 << input);
+	_delay_ms(500);
+	PORTA = 0;
+	_delay_ms(500);
+}
+
 int main(void)
 {
-	DDRA = 0xff;
-	DDRB = 0x10; 
+		// 도 : 0
+		// 레 : 1
+		// 미 : 2
+		// 파 : 3
+		// 솔 : 4
+		// 라 : 5
+		// 시 : 6
+		
+	// 비행기 악보
+	// 라 솔 파 솔 라 라 라 
+	// 솔 솔 솔 라 라 라 
+	// 라 솔 파 솔 라 라 라 
+	// 솔 솔 라 솔 파
+
+	char music[] = {5,4,3,4,5,5,5,4,4,4,5,5,5,5,4,3,4,5,5,5,4,4,5,4,3};
+	int music_length = sizeof(music);
 	
-	DDRC = 0xff;
-	DDRG = 0xff;
-	int value = 0;
 	int i = 0;
+	
+	DDRA = 0xff;
+	
 	while(1){
+		speak(music[i]);
 		i++;
-		PORTA = value;
-		value++;
-		
-		PORTC = value;
-		PORTG = value;
-		
-		
-		PORTB = 0x10;
-		for(int j=0; j<i; j++){
-		_delay_ms(1);
-		}
-		PORTB = 0x00;
-		for(int j=0; j<i; j++){
-			_delay_ms(1);
-		}
-		if (i == 1000){
-			i=0;}
-			if(value == 0xff){
-				value = 0;
-			}
+
+		if (i == music_length){
+			break;
+		}		
 	}
 }
 
