@@ -17,3 +17,8 @@
   프로세스(프로세스간의 통신) : Piped; PipedInputStream, PipedOutputStream
   오디오장치 : Audio; AudioInputStream, AudioOutputstream
   
+  
+
+File 스트림
+ FileInput, FileOutput 스트림은 파일을 입출력하기 위한 스트림이다.
+ 
