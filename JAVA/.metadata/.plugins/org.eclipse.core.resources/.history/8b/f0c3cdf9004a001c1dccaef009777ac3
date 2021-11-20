@@ -1,0 +1,13 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class FrameTest2 {
+	public static void main(String[] args) {
+		Frame f = new Frame("Login");
+		f.setSize(300, 200);
+		
+		Toolkit tk = Toolkit.getDefaultToolkit(); // 구현된 Toolkit 객체를 구한다.
+		
+	}
+}

@@ -1,0 +1,13 @@
+package InputOutput;
+
+import java.io.*;
+
+public class FileStream {
+	public static void main(String args[]) throws IOException{
+		String file_1 = "source.java";
+		
+		FileInputStream fis = new FileInputStream(file_1);
+		
+		
+	}
+}

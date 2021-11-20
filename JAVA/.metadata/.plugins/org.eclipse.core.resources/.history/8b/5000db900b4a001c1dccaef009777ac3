@@ -1,0 +1,13 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class ListTest {
+	public static void main(String[] args) {
+		Frame f = new Frame("List Å×½ºÆ®");
+		f.setSize(300, 200);
+		f.setLayout(null);
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class ButtonTest2 {
+	public static void main(String[] args) {
+		Frame f = new Frame("버튼 테스트 2");
+		f.setSize(100, 200);
+		
+	}
+}

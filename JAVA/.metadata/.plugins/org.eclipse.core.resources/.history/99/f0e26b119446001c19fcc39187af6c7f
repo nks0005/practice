@@ -1,0 +1,10 @@
+package InputOutput;
+
+import java.io.*;
+
+public class FileInputStream {
+	public static void main(String args[]) throws IOException{
+		
+		
+	}
+}

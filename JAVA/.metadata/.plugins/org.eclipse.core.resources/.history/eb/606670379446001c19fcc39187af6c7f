@@ -1,0 +1,17 @@
+package InputOutput;
+
+import java.io.*;
+
+public class FileInputStream {
+	public static void main(String args[]) throws IOException{
+		String file_1 = "source.java";
+		String file_2 = "target.java";
+		
+		FileInputStream fis = new FileInputStream(file_1);
+		FileInputStream fout = new FileOutputStream(file_2);
+		
+		
+		
+		
+	}
+}
