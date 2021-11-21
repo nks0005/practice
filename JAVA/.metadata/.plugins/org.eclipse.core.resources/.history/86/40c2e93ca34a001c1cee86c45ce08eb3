@@ -1,0 +1,14 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class ScrollbarTest {
+	public static void main(String[] args) {
+		Frame f = new Frame("Scrollbar test");
+		f.setSize(300, 200);
+		f.setLayout(null);
+		
+		Scrollbar hor = new Scrollbar(Scrollbar.HORIZONTAL, 0, 50, 0, 100);
+		
+	}
+}

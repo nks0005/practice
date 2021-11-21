@@ -1,0 +1,13 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class CanvasTest {
+	public static void main(String[] args) {
+		Frame f = new Frame("Canvas test");
+		f.setSize(300, 200);
+		f.setLayout(null);
+		
+		
+	}
+}

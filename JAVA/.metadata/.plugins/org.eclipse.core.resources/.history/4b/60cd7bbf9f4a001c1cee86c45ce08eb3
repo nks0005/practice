@@ -1,0 +1,11 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class TextAreaTest {
+	public static void main(String args[]) {
+		Frame f = new Frame("Login");
+		f.setSize(400, 200);
+		
+	}
+}

@@ -1,0 +1,11 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class FileDialogTest {
+	public static void main(String[] args) {
+		Frame f = new Frame("Parent");
+		f.setSize(300, 200);
+
+	}
+}

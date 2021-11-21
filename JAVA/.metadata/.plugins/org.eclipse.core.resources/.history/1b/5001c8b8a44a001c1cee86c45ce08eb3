@@ -1,0 +1,7 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class PanelTest {
+
+}
