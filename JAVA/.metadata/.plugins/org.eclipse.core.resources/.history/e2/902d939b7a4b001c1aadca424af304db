@@ -1,0 +1,20 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class PopupMenuTest {
+	public static void main(String args[]) {
+		final Frame f = new Frame("PopupMenu test");
+		f.setSize(300, 200);
+		
+		final PopupMenu pMenu = new PopupMenu("Edit");
+		MenuItem miCut = new MenuItem("Cut");
+		MenuItem miCopy = new MenuItem("Copy");
+		Menuitem miPaste = new MenuItem("Paste");
+		pMenu.add(miCut);
+		pMenu.add(miCopy);
+		pMenu.add(miPaste);
+		
+		
+	}
+}

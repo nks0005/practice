@@ -1,0 +1,14 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class TextFieldTest2 extends Frame{
+	Label lid;
+	Label lpwd;
+	TextField tfId;
+	TextField tfPwd;
+	Button ok;
+	
+	
+}

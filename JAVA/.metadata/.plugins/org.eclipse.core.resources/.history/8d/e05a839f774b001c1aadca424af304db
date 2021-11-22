@@ -1,0 +1,9 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class MenuTest {
+	public static void main(String[] args) {
+		
+	}
+}

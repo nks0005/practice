@@ -1,0 +1,9 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+
+public class FrameTest3 {
+	public static void main(String[] args) {
+		
+	}
+}

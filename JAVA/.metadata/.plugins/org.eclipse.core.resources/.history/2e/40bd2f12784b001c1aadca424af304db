@@ -1,0 +1,28 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class MenuTest {
+	public static void main(String[] args) {
+		Frame f = new Frame("Frame with Menu");
+		f.setSize(300, 200);
+
+		MenuBar mb = new MenuBar();
+		
+		Menu mFile = new Menu("File");
+		MenuItem miNew = new MenuItem("New");
+		MenuItem miOpen = new MenuItem("Open");
+		Menu mOthers = new Menu("Others");
+		MenuItem miExit = new MenuItem("Exit");
+		
+		mFile.add(miNew);
+		mFile.add(miOpen);
+		mFile.add(mOthers);
+		mFile.add(miExit);
+		
+		mb.add(mFile);
+		
+		f.addMenuBar(mb);
+		
+	}
+}

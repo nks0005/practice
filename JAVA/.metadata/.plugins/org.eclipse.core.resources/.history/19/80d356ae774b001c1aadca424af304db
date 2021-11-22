@@ -1,0 +1,13 @@
+package AbstractWindowToolkit;
+
+import java.awt.*;
+
+public class MenuTest {
+	public static void main(String[] args) {
+		Frame f = new Frame("Frame with Menu");
+		f.setSize(300, 200);
+		
+		MenuBar mb = new MenuBar();
+		
+	}
+}

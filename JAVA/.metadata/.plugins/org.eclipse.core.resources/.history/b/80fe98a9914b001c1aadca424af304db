@@ -1,0 +1,19 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+
+public class FrameTest3 {
+	public static void main(String[] args) {
+		Frame f = new Frame("Login");
+		f.setSize(300, 200);
+		
+		f.addWindowListener(new Event);
+	}
+}
+
+class EventHandler implements WindowListener {
+	public void windowOpened(WindowEvent e) {}
+	public void windowClosing(WindowEvent e) { // Frame 닫기 버튼 호출
+		
+	}
+}
