@@ -1,0 +1,11 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+
+public class MouseEventTest extends Frame {
+	Label location;
+	
+	MouseEventTest(String title){
+		
+	}
+}

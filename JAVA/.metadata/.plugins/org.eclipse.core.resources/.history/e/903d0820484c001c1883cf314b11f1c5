@@ -1,0 +1,14 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+
+public class TextComponentEventTest extends Frame {
+	TextField tf;
+	TextArea ta;
+	
+	public TextComponentEventTest(String title) {
+		super(title);
+		
+		
+	}
+}

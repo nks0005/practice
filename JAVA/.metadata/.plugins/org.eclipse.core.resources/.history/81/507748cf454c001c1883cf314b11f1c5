@@ -1,0 +1,22 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+
+public class mainFrame extends Frame {
+	Label location;
+
+	mainFrame(String title) {
+		super(title);
+		location = new Label("Mouse Pointer Location : ");
+		location.setSize(195, 15);
+
+	}
+}
+
+public class MouseEventTest extends Frame {
+	Label location;
+
+	MouseEventTest(String title) {
+
+	}
+}

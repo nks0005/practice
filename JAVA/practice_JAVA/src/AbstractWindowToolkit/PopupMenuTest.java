@@ -38,7 +38,7 @@ public class PopupMenuTest {
 					c.addMouseListener(new MouseAdapter() {
 						public void mousePressed(MouseEvent me) {
 							if(me.getModifiersEx() == InputEvent.BUTTON3_DOWN_MASK) {
-								f.remove(c);
+								f.remove((Canvas)me.getSource());
 								System.out.println("Remove " + c.getName());
 							}
 						}

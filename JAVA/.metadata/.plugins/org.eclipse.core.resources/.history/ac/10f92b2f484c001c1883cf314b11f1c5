@@ -1,0 +1,19 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+
+public class TextComponentEventTest extends Frame {
+	TextField tf;
+	TextArea ta;
+	
+	public TextComponentEventTest(String title) {
+		super(title);
+		
+		tf = new TextField();
+		ta = new TextArea();
+		super.add(ta, "Center"); // Border Layout
+		super.add(tf, "South");
+		
+		
+	}
+}

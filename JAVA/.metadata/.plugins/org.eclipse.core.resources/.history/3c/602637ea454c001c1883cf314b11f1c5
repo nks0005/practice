@@ -1,0 +1,35 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+import java.awt.event.MouseMotionListener;
+
+public class mainFrame extends Frame {
+	Label location;
+
+	mainFrame(String title) {
+		super(title);
+		location = new Label("Mouse Pointer Location : ");
+		location.setSize(195, 15);
+		location.setLocation(5, 30);
+		location.setBackground(Color.yellow);
+		add(location);
+
+	}
+
+	class EventHandler implements MouseMotionListener {
+		public void mouseDragged(MouseEvent e) {
+		}
+		public void mouseMoved(MouseEvent e) {
+			
+			z
+		}
+	}
+}
+
+public class MouseEventTest extends Frame {
+	Label location;
+
+	MouseEventTest(String title) {
+
+	}
+}
