@@ -916,3 +916,16 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.dom.ASTNode.
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-11-24 00:00:38.357
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Index 56 out of bounds for length 56
+	at org.eclipse.jdt.internal.core.index.DiskIndex.computeDocumentNames(DiskIndex.java:360)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:538)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:219)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:1139)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1192)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:818)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:415)
+	at java.base/java.lang.Thread.run(Thread.java:832)
