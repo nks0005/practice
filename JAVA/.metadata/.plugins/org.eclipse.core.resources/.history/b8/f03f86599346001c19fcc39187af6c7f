@@ -1,9 +1,0 @@
-package InputOutput;
-
-import java.io.*;
-
-public class FileViewer {
-	public static void main(String args[]) throws IOException{
-		
-	}
-}

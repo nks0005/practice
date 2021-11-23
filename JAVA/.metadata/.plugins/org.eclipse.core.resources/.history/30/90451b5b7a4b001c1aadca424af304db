@@ -1,7 +1,0 @@
-package AbstractWindowToolkit;
-
-import java.awt.*;
-
-public class PopupMenuTest {
-
-}

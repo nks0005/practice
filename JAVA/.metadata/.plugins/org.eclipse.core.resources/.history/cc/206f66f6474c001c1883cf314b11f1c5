@@ -1,7 +1,0 @@
-package AbstractWindowToolkit_EventTest;
-
-import java.awt.*;
-
-public class TextComponentEventTest {
-
-}

@@ -1,0 +1,47 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+
+public class TextEditor extends Frame {
+	String fileName;
+	TextArea content;
+	MenuBar mb;
+	Menu mFile;
+	MenuItem miNew, miOpen, miSaveAs, miExit;
+
+	public TextEditor(String title) {
+		super(title);
+
+	}
+	
+	void openFile(String fileName){
+		FileReader fr;
+		BufferedReader br;
+		StringWriter sw;
+		
+		try{
+		fr = new FileReader(fileName);
+		br = new BufferedReader(fr);
+		}catch(IOException io){
+			io.printStackTrace();
+		}
+	}
+	
+	class miHandler implements ActionListener {
+		public void actionPerformed(ActionEvent ae) {
+			String command = ae.getActionCommand();
+
+			if (command.equals("New")) {
+				content.setText("");
+			} else if (command.equals("Open")) {
+				FileDialog fd = new FileDialog(TextEditor.this , "파일 열기");
+				fd.setVisible(true);
+				
+				fileName = fd.getDirectory() + fd.getFile();
+				openFile(fileName);
+			}
+		}
+	}
+}

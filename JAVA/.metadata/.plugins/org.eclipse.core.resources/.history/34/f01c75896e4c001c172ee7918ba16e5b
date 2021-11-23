@@ -1,0 +1,9 @@
+package AbstractWindowToolkit_EventTest;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+
+public class TextEditor {
+
+}
